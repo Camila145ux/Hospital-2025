@@ -1,27 +1,32 @@
-import javax.swing.JFrame;                       //Para crear una ventana.
-import javax.swing.JLabel;                       //JLabel: Para mostrar texto dentro de esa ventana.
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+
+import javax.swing.*;
+import vistas.LoginPanel;
 
 public class Main {
+    public static void main(String[] args) {
 
-    public static void main(String[] args ) {
+        // Ventana
+        JFrame miVentana = new JFrame();    // Crea una nueva ventana vacía
+        miVentana.setTitle("Hospital SCL"); // Título que aparece en la parte superior
+        miVentana.setSize(1000, 800);       // Establece el tamaño de la ventana (ancho x alto)
+        miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        miVentana.setLayout(new BorderLayout());
 
-        //crear una ventana con frame
+        // Panel Banner
+        JPanel panelBanner = new JPanel();
+        panelBanner.setPreferredSize(new Dimension(500,800));
+        panelBanner.setOpaque(true);
+        panelBanner.setBackground(Color.RED);
+        miVentana.add(panelBanner);
+        miVentana.add(panelBanner,BorderLayout.WEST);
 
-     JFrame miVentana = new JFrame();           ///crear un objeto JFrame (miventana)
-     miVentana.setTitle("Hospital SCL");   //Establecer un titulo
-     miVentana.setSize(1000,800);   //Definir el tamanno, ancho y alto
+        // Panel Login
+        LoginPanel panelLogin = new LoginPanel();
+        miVentana.add(panelLogin.getPanel(), BorderLayout.CENTER);
 
-     JLabel Texto = new JLabel();               //crear una etiqueta JLabel (texto)
-     Texto.setText("Hola mundo");          //colocar el texto
-     miVentana.add(Texto);                      //annadir esta etiqueta(texto) a la ventana creada
-
-
-
-     miVentana.setVisible(true);              //mostrar la ventana
-
-    
-
+        miVentana.setVisible(true);         // Muestra la ventana en pantalla
     }
-
-
 }
