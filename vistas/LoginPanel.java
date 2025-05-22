@@ -20,7 +20,7 @@ public class LoginPanel {
         panelLogin = new JPanel();
         panelLogin.setSize(500, 800);
         panelLogin.setOpaque(true);
-        panelLogin.setBackground(Color.PINK);
+        panelLogin.setBackground(Color.WHITE);
         panelLogin.setLayout(new GridBagLayout());
 
         // Administrador de diseño
