@@ -2,4 +2,4 @@
 
 Proyecto hospital
 
-![Logo](https://lh3.googleusercontent.com/drive-storage/AJQWtBNBCBLhjLFA8ub77jKPV0twTQSwicu-5QRxMxrVnM9nxTKYf7-6Ido99Ngg1WdEG7IYVvd9U30J20vlTdyVcBq7XWQY238_zFdCBpiyn5lOgrU=w3840-h1800)
+(![hospital](https://github.com/user-attachments/assets/462391eb-5bdd-420f-8aca-62e57ae60d17)
