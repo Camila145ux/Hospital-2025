@@ -1,10 +1,9 @@
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
 
 import javax.swing.*;
 import vistas.LoginPanel;
 import vistas.bannerPanel;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +17,8 @@ public class Main {
 
         // Panel Login
         LoginPanel panelLogin = new LoginPanel();
-        miVentana.add(panelLogin.getPanel(), BorderLayout.CENTER);
+        miVentana.add(panelLogin.getJPanel(), BorderLayout.CENTER);
+
 
         //panel banner
         bannerPanel bannerPanel = new bannerPanel();

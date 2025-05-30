@@ -4,13 +4,20 @@ import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+
+import ventanas.Dashboard;
+import control.LoginControler;
 
 public class LoginPanel {
 
@@ -50,11 +57,11 @@ public class LoginPanel {
        panelLogin.add(entradaCorreo,gbc);
 
         // ENTRADA CONTRA
-        JPasswordField entradaContraseña = new JPasswordField("");
-        entradaContraseña.setSize(new Dimension(100,50));
+        JPasswordField entradaContra = new JPasswordField("");
+        entradaContra.setSize(new Dimension(100,50));
         gbc.gridx = 1;
         gbc.gridy = 2;
-        panelLogin.add(entradaContraseña,gbc);
+        panelLogin.add(entradaContra,gbc);
 
         // BOTON
         JButton btnIngresar = new JButton("Ingresar");
@@ -64,10 +71,31 @@ public class LoginPanel {
         gbc.anchor = GridBagConstraints.EAST;
         gbc.fill = GridBagConstraints.NONE;
         panelLogin.add(btnIngresar, gbc);
-    }
 
-    public JPanel getPanel(){
-        return panelLogin;
-    }
+        btnIngresar.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+
+                
+    // Recuperar Datos
+
+        String entradaUsuario = entradaCorreo.getText();
+        String entradaContrasenna= entradaContra.getText();
+
+        if (new LoginControler().validacionDatos(entradaUsuario, entradaContrasenna))  {
+
+        new Dashboard();
+        JFrame ventanaPadre = (JFrame) SwingUtilities.getWindowAncestor(panelLogin);
+        ventanaPadre.dispose();
 
 }
+}
+});
+
+}
+
+public JPanel getJPanel(){
+return panelLogin;
+}
+}
+
