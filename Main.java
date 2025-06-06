@@ -2,6 +2,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.*;
 import vistas.LoginPanel;
+import vistas.TablaPanel;
 import vistas.bannerPanel;
 
 

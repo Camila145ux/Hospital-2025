@@ -1,24 +1,26 @@
 package ventanas;
-import java.awt.Color;
+
 import javax.swing.JFrame;
+import vistas.TablaPanel; 
 
-public class Dashboard extends JFrame{
- 
-    public Dashboard() {
+public class Dashboard extends JFrame {
+    
+    public Dashboard(){
         
-//VENTANA JFRAME
-
-        this.setTitle("Doctor Marcos");
-        this.setSize(1000,800);
+        // Ventana
+        this.setTitle("Dashware");
+        this.setSize(1000, 800);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
 
+        // Crear y agregar la tabla
+        TablaPanel tabla = new TablaPanel();
+        tabla.setBounds(0, 0, 1000, 800); 
+        this.add(tabla); 
+
         this.setVisible(true);
-
     }
-
-    public JFrame getDashFrame(){
+    public JFrame getDasFrame(){
         return this;
     }
-
 }
