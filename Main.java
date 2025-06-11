@@ -27,6 +27,8 @@ public class Main {
         bannerPanel bannerPanel = new bannerPanel();
         miVentana.add(bannerPanel.getBanner(), BorderLayout.WEST);
 
+        
+
         miVentana.setVisible(true);         // Muestra la ventana en pantalla
     }
 }

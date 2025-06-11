@@ -1,5 +1,8 @@
 package paneles;
 
+import java.awt.Color;
+
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
@@ -7,7 +10,9 @@ import data.Pacientes;
 
 public class TablaPanel extends JScrollPane {
 
+    
     public TablaPanel() {
+
         // Columnas de la tabla
         String[] columnas = { "ID", "Nombre", "Edad" };
 
