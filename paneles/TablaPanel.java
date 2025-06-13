@@ -14,7 +14,7 @@ public class TablaPanel extends JScrollPane {
     public TablaPanel() {
 
         // Columnas de la tabla
-        String[] columnas = { "ID","Nombre", "Descripcion", "Hora" };
+        String[] columnas = { "ID","Nombre", "Edad", "Descripcion", "Hora", "Habitación" };
 
         // Obtener los datos de la clase Pacientes
         Object[][] datos = new Pacientes().getDatos();

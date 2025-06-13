@@ -9,7 +9,7 @@ public class LoginControler {
     {"lola", "0000"},{"prueba", "test"},
     {"ana12", "4321"},{"pepe7", "xyz"},
     {"carlosx", "1a2b3c"},
-    {"demo", "demo"}
+    {"demo", "demo"}, {"dataguite", "gatitos123"}
     };
 
     public boolean validacionDatos(String EntradaUsuario, String EntradaContrasenna) {
