@@ -55,7 +55,7 @@ public class MenuLateralPanel extends JPanel{
      boton4.addActionListener(new ActionListener() {
          @Override
          public void actionPerformed(ActionEvent e) {
-             ventanapacientes("Página Doc");
+             ventanapacientes("Doctores");
          }
      });
      this.add(boton4);
@@ -65,7 +65,7 @@ public class MenuLateralPanel extends JPanel{
      boton5.addActionListener(new ActionListener() {
          @Override
          public void actionPerformed(ActionEvent e) {
-             ventanapacientes("Página Tiempo");
+             ventanapacientes("Tiempo");
          }
      });
      this.add(boton5);
