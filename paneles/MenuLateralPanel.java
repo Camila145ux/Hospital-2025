@@ -38,10 +38,51 @@ public class MenuLateralPanel extends JPanel{
          }
      });
      this.add(boton2);
- }
 
 
+     JButton boton3 = new JButton("Habitacion");
+     boton3.setBounds(80, 130, 140, 30);  // posicionarlo debajo del botón anterior (con x,y)
+     boton3.addActionListener(new ActionListener() {
+         @Override
+         public void actionPerformed(ActionEvent e) {
+             ventanapacientes("Página Habitacion");
+         }
+     });
+     this.add(boton3);
+
+     JButton boton4 = new JButton("Doctor");
+     boton4.setBounds(80, 180, 140, 30);  // posicionarlo debajo del botón anterior (con x,y)
+     boton4.addActionListener(new ActionListener() {
+         @Override
+         public void actionPerformed(ActionEvent e) {
+             ventanapacientes("Página Doc");
+         }
+     });
+     this.add(boton4);
+
+     JButton boton5 = new JButton("TIempo hospitalizacion");
+     boton5.setBounds(80, 230, 200, 30);  // posicionarlo debajo del botón anterior (con x,y)
+     boton5.addActionListener(new ActionListener() {
+         @Override
+         public void actionPerformed(ActionEvent e) {
+             ventanapacientes("Página Tiempo");
+         }
+     });
+     this.add(boton5);
+
+     JButton boton6 = new JButton("Diagnostico");
+     boton6.setBounds(80, 280, 140, 30);  // posicionarlo debajo del botón anterior (con x,y)
+     boton6.addActionListener(new ActionListener() {
+         @Override
+         public void actionPerformed(ActionEvent e) {
+             ventanapacientes("Página Diagnostico");
+         }
+     });
+     this.add(boton6);
+ 
+    }
  // VENTANAS DE LOS BOTONES
+
  // Método para abrir la ventana del historial
  private void ventanahistorial(String titulo) { //abrir la ventana
      JFrame ventanaHistorial = new JFrame(titulo); //creacion de la ventana
