@@ -1,7 +1,6 @@
 package paneles;
 
 import java.awt.Color;
-
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -22,8 +21,5 @@ public class TablaPanel extends JScrollPane {
         // Crear modelo y tabla
         DefaultTableModel modelo = new DefaultTableModel(datos, columnas);
         JTable tabla = new JTable(modelo);
-
-        // Añadir tabla al JScrollPane
-        this.setViewportView(tabla);
     }
 }
