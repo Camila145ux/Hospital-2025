@@ -2,4 +2,4 @@
 
 Proyecto hospital
 
-(![hospital](assets/tienda.png)
+(![hospital](https://github.com/user-attachments/assets/462391eb-5bdd-420f-8aca-62e57ae60d17)
